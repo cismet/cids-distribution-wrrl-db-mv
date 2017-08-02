@@ -15,8 +15,8 @@
     <description>Generates a cids-custom WRRL-DB-MV cids distribution</description>
     
     <properties>
-        <de.cismet.cidsCodebase>http://cids.fis-wasser-mv.de/</de.cismet.cidsCodebase>
-        <de.cismet.cidsAccountExtension>WRRLDBMV_Beta</de.cismet.cidsAccountExtension>
+        <de.cismet.cidsCodebase>https://wrrldbmv.cismet.de/</de.cismet.cidsCodebase>
+        <de.cismet.cidsAccountExtension>WRRLDBMV</de.cismet.cidsAccountExtension>
         <maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
     </properties>
     
