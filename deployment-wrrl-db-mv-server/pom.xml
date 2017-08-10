@@ -26,7 +26,7 @@
         -->
         <dependency>
             <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
-            <artifactId>cids-custom-wrrl-db-mv</artifactId>
+            <artifactId>cids-custom-wrrl-db-mv-server</artifactId>
         </dependency>
         <!--
             The Server is started with HeadlessServerConsole, therefore we need this
