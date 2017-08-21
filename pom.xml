@@ -225,5 +225,6 @@
         <module>deployment-wrrl-db-mv-navigator</module>
         <module>distribution-wrrl-db-mv-server</module>        
         <module>distribution-wrrl-db-mv-navigator</module>
+        <module>distribution-wrrl-db-mv-performance-test</module>
     </modules>
 </project>
