@@ -150,7 +150,7 @@
                                                                 
                                 <arguments>
                                     <argument>TEST-System;https://wrrldbmv-callserver.cismet.de/callserver/binary;admin@Administratoren@WRRL_DB_MV;true;132@257@WRRL_DB_MV;132@257@WRRL_DB_MV</argument>
-                                    <argument>LIVE-System;https://fis-wasser-mv.de/callserver/binary;admin@Administratoren@WRRL_DB_MV;false;132@257@WRRL_DB_MV;132@257@WRRL_DB_MV</argument>
+                                    <argument>LIVE-System;https://fis-wasser-mv.de/callserver/binary;admin@Administratoren@WRRL_DB_MV;true;132@257@WRRL_DB_MV;132@257@WRRL_DB_MV</argument>
                                 </arguments>
                                 
                                 <localConfiguration>
