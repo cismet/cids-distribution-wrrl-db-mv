@@ -221,8 +221,12 @@
     </dependencyManagement>
         
     <modules>
+        <module>deployment-wrrl-db-mv-registry</module>
+        <module>deployment-wrrl-db-mv-broker</module>
         <module>deployment-wrrl-db-mv-server</module>
         <module>deployment-wrrl-db-mv-navigator</module>
+        <module>distribution-wrrl-db-mv-registry</module>        
+        <module>distribution-wrrl-db-mv-broker</module>        
         <module>distribution-wrrl-db-mv-server</module>        
         <module>distribution-wrrl-db-mv-navigator</module>
         <module>distribution-wrrl-db-mv-performance-test</module>
