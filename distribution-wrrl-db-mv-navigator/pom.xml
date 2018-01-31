@@ -197,6 +197,7 @@
                                         <!--
                                             cids custom config
                                         -->
+					<jarName>serverCert.jar</jarName>
                                         <jarName>i18n.jar</jarName>
                                         <jarName>cismapPluginImages.jar</jarName>
                                         <jarName>navigatorImages.jar</jarName>
