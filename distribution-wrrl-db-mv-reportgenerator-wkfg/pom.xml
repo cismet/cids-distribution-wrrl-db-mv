@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
+        <artifactId>wrrl-db-mv-distribution</artifactId>
+        <version>6.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    
+    <artifactId>distribution-wrrl-db-mv-reportgenerator-wkfg</artifactId>
+    <packaging>pom</packaging>
+
+    <!--
+        IMPORTANT: For the cids-maven plugin to work properly there 
+        is excatly *one* dependecy to the deployment module specified!
+        
+        Use the parent properties project.groupId and project.version!
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>deployment-wrrl-db-mv-navigator</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+    
+    <!--
+        Specify the cids-maven-plugin:generate-lib in the build/plugins section.
+        Other plugins are executed based on parent's  build/plugins and
+        build/pluginManagement sections, respectively, as well as on active build 
+        profiles (See <profiles> section!)
+    -->      
+    <build>
+        <plugins>
+            <!--
+                cids-maven-plugin:generate-lib generates the autodistribution
+                for the single dependency defined in the dependecy section!
+            -->
+            <plugin>
+                <groupId>de.cismet.cids</groupId>
+                <artifactId>cids-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-lib</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>generate-lib</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <!--
+                    Individual autodistribution build configuration, e.g. for
+                    starter.jar or client.jnlp creation.
+                    
+                    This configuration creates client the JNLP for the 
+                    navigator depoyment artifact!
+                -->
+                <configuration>
+                    <vendor>cismet GmbH</vendor>
+                    <homepage>http://www.cismet.de/</homepage>
+                    <!--
+                        maven libs dir relative to codebase. Only required, if
+                        classpathFromMavenRepo is false!
+                    -->
+                    <!--<m2codebase>lib/m2</m2codebase>-->
+                    
+                    <!--
+                        The global account extension that is used for naming client directories
+                        and classpath / starter jars!
+                    -->
+                    <accountExtension>${de.cismet.cidsAccountExtension}</accountExtension>
+                    
+                    <!--
+                        IMPORTANT: the cidsDistribution directory. All files will be overwritten!
+                    -->
+                    <outputDirectory>${de.cismet.cidsDistDir}</outputDirectory>
+                    
+                    <failOnError>true</failOnError>
+                    <verbose>false</verbose>
+                    
+                    <!--
+                        Maven Jarsigner Plugin cannot deal with certain JARs.
+                        Activate sign-ext-dependencies from cids-distribution-parent
+                        instead!
+                    -->
+                    <checkSignature>false</checkSignature>
+                    <sign>false</sign>
+                    
+                    <!--
+                        If set to false, classpath.jar and classpath.jnlp will 
+                        refer to the JARs copied into the lib/ext and lib/int
+                        directories!
+                    -->
+                    <classpathFromMavenRepo>false</classpathFromMavenRepo>
+                    
+                    <!--
+                        if set to true, no client/<accountExtension> directory will
+                        be created
+                    -->
+                    <flatClientDirectory>false</flatClientDirectory>
+                    
+                    <!--
+                        The actual extended dependency configuration for the
+                        deployment artifact defined in the dependencies sections
+                    -->
+                    <dependencyConfiguration>
+                        <dependencyEx>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>deployment-wrrl-db-mv-navigator</artifactId>
+                            
+                            <!--
+                                Generate a client.JNLP but not starter jars
+                            -->
+                            <generateJar>true</generateJar>
+                            <generateJnlp>false</generateJnlp>
+                            
+                            <!--
+                                ATTENTION: SecurityJar is put into client directory
+                                and *must* be signed by the maven jarsigner plugins.
+                                It will be singed even if <sign> is set to false!
+                                Therefore de.cismet.keystore.* properties mut be set! 
+                            -->
+                            <generateSecurityJar>false</generateSecurityJar>
+                            
+                            <!--
+                                Confguration of the starter (JAR or JNLP)
+                            -->
+                            <starterConfiguration>
+                                <starterAlias>wkFgReportGenerator</starterAlias>
+                                
+                                <mainClass>de.cismet.cids.custom.reports.WkFgReport</mainClass>
+                                
+                                <title>WRRL-DB-MV WkFg ReportGenerato v${project.version}</title>
+                                <description>WRRL-DB-MV WkFg ReportGenerato in der Version ${project.version} vom ${maven.build.timestamp}</description>
+                                
+                                <localConfiguration>
+                                    <jarNames>
+                                        <jarName>res.jar</jarName>
+                                        <jarName>jasper-fonts.jar</jarName>
+                                    </jarNames>
+                                </localConfiguration>
+
+                            </starterConfiguration>
+                        </dependencyEx>
+                    </dependencyConfiguration>
+                </configuration>
+            </plugin>            
+        </plugins>
+    </build>
+    <name>distribution-wrrl-db-mv-reportgenerator-wkfg</name>
+</project>
