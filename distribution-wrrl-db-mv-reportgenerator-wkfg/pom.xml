@@ -138,6 +138,7 @@
                                 <localConfiguration>
                                     <jarNames>
                                         <jarName>res.jar</jarName>
+                                        <jarName>serverCert.jar</jarName>
                                         <jarName>jasper-fonts.jar</jarName>
                                     </jarNames>
                                 </localConfiguration>
