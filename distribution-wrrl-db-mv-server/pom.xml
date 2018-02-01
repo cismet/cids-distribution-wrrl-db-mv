@@ -129,7 +129,7 @@
                                 -->
                                 <localConfiguration>
                                     <jarNames>
-                                        <jarName>jasperfonts.jar</jarName>
+                                        <jarName>jasper-fonts.jar</jarName>
                                     </jarNames>
                                 </localConfiguration>                                
                             </starterConfiguration>

@@ -206,7 +206,7 @@
                                         <jarName>wfsForms.jar</jarName>
                                         <jarName>cismapCommonsImages.jar</jarName>
                                         <jarName>editor.jar</jarName>
-                                        <jarName>jasperfonts.jar</jarName>
+                                        <jarName>jasper-fonts.jar</jarName>
                                     </jarNames>
                                 </localConfiguration>
                             </starterConfiguration>
