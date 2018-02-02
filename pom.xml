@@ -231,5 +231,6 @@
         <module>distribution-wrrl-db-mv-navigator</module>
         <module>distribution-wrrl-db-mv-performance-test</module>
         <module>distribution-wrrl-db-mv-reportgenerator-wkfg</module>
+        <module>distribution-wrrl-db-mv-reportgenerator-fgsk</module>
     </modules>
 </project>
