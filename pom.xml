@@ -65,12 +65,32 @@
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
                 <version>6.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
                 <version>6.0</version>
                 <type>test-jar</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>                         
             <dependency>
                 <groupId>de.cismet.commons</groupId>
@@ -87,12 +107,32 @@
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
                 <version>6.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
                 <version>6.0</version>
                 <type>test-jar</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
@@ -140,12 +180,32 @@
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
                 <version>6.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
                 <version>6.0</version>
                 <type>test-jar</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
@@ -199,7 +259,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv-server</artifactId>
-                <version>6.0</version>
+                <version>6.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
