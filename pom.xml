@@ -15,8 +15,8 @@
     <description>Generates a cids-custom WRRL-DB-MV cids distribution</description>
     
     <properties>
-        <de.cismet.cidsCodebase>https://wrrldbmv.cismet.de/</de.cismet.cidsCodebase>
-        <de.cismet.cidsAccountExtension>WRRLDBMV</de.cismet.cidsAccountExtension>
+        <de.cismet.cidsCodebase>https://cids.fis-wasser-mv.de</de.cismet.cidsCodebase>
+        <de.cismet.cidsAccountExtension>wrrl-db-mv</de.cismet.cidsAccountExtension>
         <maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
     </properties>
     
@@ -292,5 +292,6 @@
         <module>distribution-wrrl-db-mv-performance-test</module>
         <module>distribution-wrrl-db-mv-reportgenerator-wkfg</module>
         <module>distribution-wrrl-db-mv-reportgenerator-fgsk</module>
+        <module>distribution-wrrl-db-mv-navigator2G</module>
     </modules>
 </project>
