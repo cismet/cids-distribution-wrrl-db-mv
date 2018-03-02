@@ -16,7 +16,7 @@
         Its sole purpose is to generate / update an autodistribution that is
         based on navigator deployment module
     -->
-    <artifactId>distribution-wrrl-db-mv-navigator</artifactId>
+    <artifactId>distribution-wrrl-db-mv-navigator2G</artifactId>
     <packaging>pom</packaging>
 
     <!--
