@@ -60,7 +60,7 @@
                 <configuration>
                     <vendor>cismet GmbH</vendor>
                     <homepage>http://www.cismet.de/</homepage>
-                    <codebase>https://cids.fis-wasser-mv.de</codebase>
+                    <codebase>${de.cismet.cidsCodebase}</codebase>
                     <!--
                         maven libs dir relative to codebase. Only required, if
                         classpathFromMavenRepo is false!
