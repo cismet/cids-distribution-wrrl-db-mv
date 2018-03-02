@@ -64,7 +64,7 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.0</version>
+                <version>6.0.2</version>
                 <exclusions>
                     <exclusion>
                         <groupId>postgresql</groupId>
@@ -79,7 +79,7 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.0</version>
+                <version>6.0.2</version>
                 <type>test-jar</type>
                 <exclusions>
                     <exclusion>
@@ -106,7 +106,7 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.0</version>
+                <version>6.0.1</version>
                 <exclusions>
                     <exclusion>
                         <groupId>postgresql</groupId>
@@ -121,7 +121,7 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.0</version>
+                <version>6.0.1</version>
                 <type>test-jar</type>
                 <exclusions>
                     <exclusion>
@@ -179,7 +179,7 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.0</version>
+                <version>6.0.5</version>
                 <exclusions>
                     <exclusion>
                         <groupId>postgresql</groupId>
@@ -194,7 +194,7 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.0</version>
+                <version>6.0.5</version>
                 <type>test-jar</type>
                 <exclusions>
                     <exclusion>
@@ -269,7 +269,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>6.0.1</version>
+                <version>6.0.2</version>
             </dependency>
           
             <dependency>
