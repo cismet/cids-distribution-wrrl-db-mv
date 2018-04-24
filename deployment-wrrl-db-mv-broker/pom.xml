@@ -10,19 +10,29 @@
     <!--
         Inherit groupId and version from parent
     -->
-    <artifactId>deployment-wrrl-db-mv-server</artifactId>
+    <artifactId>deployment-wrrl-db-mv-broker</artifactId>
     <packaging>pom</packaging>
     
-    <name>deployment-wrrl-db-mv-server</name>
-    <description>deployment artifact for cids-custom-wrrl-db-mv-server</description>
+    <name>deployment-wrrl-db-mv-broker</name>
+    <description>deployment artifact for wrrl-db-mv-broker</description>
         
+    <!--
+        This dependency managment section is only necessary to resolve dependency 
+        conflicts (detected by maven-enforcer or maven-dependency plugins) between
+        cids-custom-belis-server and cids-utils!        
+    -->
+    <dependencyManagement>
+        <dependencies>            
+        </dependencies>
+    </dependencyManagement>
+    
     <!--
         Dependencies of the deployment artifact. This is everything needed to 
         create a running instance of the service or client!
     -->
     <dependencies>
         <!--
-            The actual custom project server artifact that is deployed and run
+            The actual custom project server artifacts that are deployed and run
         -->
         <dependency>
             <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
@@ -36,18 +46,6 @@
             <groupId>de.cismet.commons</groupId>
             <artifactId>cids-utils</artifactId>
         </dependency>
-<!--        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.2.1</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.postgis</groupId>
-            <artifactId>postgis-jdbc</artifactId>
-            <version>2.2.1</version>
-            <scope>runtime</scope>
-        </dependency>-->
         <!--
             Add also slf4j-log4j12 binding (which is declared as OPTIONAL dependency
             in the custom projects and the sub projects) to be able to forward slf4j
@@ -203,6 +201,8 @@
                         -->
                         <exclude>**/CidsBeanTest</exclude>
                         <exclude>**/CidsBeanSerialisationTest</exclude>
+                        
+                        <exclude>**/TimedSoftReferenceTest</exclude>
                     </excludes>
                 </configuration>
             </plugin>

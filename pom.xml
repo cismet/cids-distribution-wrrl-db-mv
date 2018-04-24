@@ -8,15 +8,15 @@
       
     <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
     <artifactId>wrrl-db-mv-distribution</artifactId>
-    <version>6.0</version>
+    <version>18.04-1</version>
     <packaging>pom</packaging>
 
     <name>cids-custom WRRL-DB-MV Distribution</name>
     <description>Generates a cids-custom WRRL-DB-MV cids distribution</description>
     
     <properties>
-        <de.cismet.cidsCodebase>https://wrrldbmv.cismet.de/</de.cismet.cidsCodebase>
-        <de.cismet.cidsAccountExtension>WRRLDBMV</de.cismet.cidsAccountExtension>
+        <de.cismet.cidsCodebase>https://cids.fis-wasser-mv.de</de.cismet.cidsCodebase>
+        <de.cismet.cidsAccountExtension>wrrl-db-mv</de.cismet.cidsAccountExtension>
         <maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
     </properties>
     
@@ -24,7 +24,7 @@
         <connection>scm:https://github.com/cismet/cids-distribution-wrrl-db-mv.git</connection>
         <developerConnection>scm:git:git@github.com:cismet/cids-distribution-wrrl-db-mv.git</developerConnection>
         <url>https://github.com/cismet/cids-distribution-wrrl-db-mv</url>
-        <tag>v6.0</tag>
+        <tag>v18.04-1</tag>
     </scm>
     
     <issueManagement>
@@ -64,35 +64,75 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.0</version>
+                <version>6.2</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.0</version>
+                <version>6.2</version>
                 <type>test-jar</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>                         
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.0.2</version>
+                <version>6.1.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.0.2</version>
+                <version>6.1.2</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.0</version>
+                <version>6.0.2</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.0</version>
+                <version>6.0.2</version>
                 <type>test-jar</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
@@ -139,13 +179,33 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.0</version>
+                <version>6.2.2</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.0</version>
+                <version>6.2.2</version>
                 <type>test-jar</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.postgis</groupId>
+                        <artifactId>postgis-jdbc</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
@@ -172,23 +232,23 @@
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.0</version>
+                <version>6.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.0</version>
+                <version>6.2</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>6.0.1</version>
+                <version>6.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>6.0.1</version>
+                <version>6.1</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
@@ -199,7 +259,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv-server</artifactId>
-                <version>6.0</version>
+                <version>6.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
@@ -209,7 +269,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>6.0</version>
+                <version>6.0.4</version>
             </dependency>
           
             <dependency>
@@ -221,10 +281,17 @@
     </dependencyManagement>
         
     <modules>
+        <module>deployment-wrrl-db-mv-registry</module>
+        <module>deployment-wrrl-db-mv-broker</module>
         <module>deployment-wrrl-db-mv-server</module>
         <module>deployment-wrrl-db-mv-navigator</module>
+        <module>distribution-wrrl-db-mv-registry</module>        
+        <module>distribution-wrrl-db-mv-broker</module>        
         <module>distribution-wrrl-db-mv-server</module>        
         <module>distribution-wrrl-db-mv-navigator</module>
         <module>distribution-wrrl-db-mv-performance-test</module>
+        <module>distribution-wrrl-db-mv-reportgenerator-wkfg</module>
+        <module>distribution-wrrl-db-mv-reportgenerator-fgsk</module>
+        <module>distribution-wrrl-db-mv-navigator2G</module>
     </modules>
 </project>

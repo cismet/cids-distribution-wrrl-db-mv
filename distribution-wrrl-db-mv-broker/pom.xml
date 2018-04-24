@@ -9,14 +9,14 @@
     </parent>
     
     <!--
-        This is the autodistribution module for the wrrl-db-mv-server deployment
-        module (cids.custom-server + cids-utils). 
+        This is the autodistribution module for the wrrl-db-mv-broker deployment
+        module. 
 
         This aertifact is *not* installed to the maven repository!
         Its sole purpose is to generate / update an autodistribution that is
-        based on wrrl-db-mv-server deployment module
+        based on wrrl-db-mv-broker deployment module
     -->
-    <artifactId>distribution-wrrl-db-mv-server</artifactId>
+    <artifactId>distribution-wrrl-db-mv-broker</artifactId>
     <packaging>pom</packaging>
 
     <!--
@@ -28,7 +28,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>deployment-wrrl-db-mv-server</artifactId>
+            <artifactId>deployment-wrrl-db-mv-broker</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
         </dependency>
@@ -63,13 +63,13 @@
                     starter.jar or client.jnlp creation.
                     
                     This configuration creates client the JNLP for the 
-                    wrrl-db-mv-server depoyment artifact!
+                    wrrl-db-mv-broker depoyment artifact!
                 -->
                 <configuration>
                     <!--
                         The global account extension that is used for naming client directories
                         and classpath / starter jars!
-                        Defined in distribution (can be overriden in module pom
+                        Defined in wrrl-db-mv-distribution (can be overriden in module pom
                         or on command line)
                     -->
                     <accountExtension>${de.cismet.cidsAccountExtension}</accountExtension>
@@ -105,7 +105,7 @@
                     <dependencyConfiguration>
                         <dependencyEx>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>deployment-wrrl-db-mv-server</artifactId>
+                            <artifactId>deployment-wrrl-db-mv-broker</artifactId>
                             
                             <!--
                                 Generate a server starter but not starter jars
@@ -117,21 +117,8 @@
                                 Confguration of the starter (JAR or JNLP)
                             -->
                             <starterConfiguration>
-                                <starterAlias>wrrl-db-mv</starterAlias>
+                                <starterAlias>broker</starterAlias>
                                 <mainClass>de.cismet.cids.admin.serverManagement.HeadlessServerConsole</mainClass>
-                                
-                                <!--
-                                    The cids maven plugin checks if these dependencies are actually present
-                                    in lib/local{$accountExtension}/ when updating the classpath entries
-                                    of the starters. 
-                                    You can put empty jars lib/local{$accountExtension}/ if these files
-                                    are not available on the system where the autodistribution is built!
-                                -->
-                                <localConfiguration>
-                                    <jarNames>
-                                        <jarName>jasper-fonts.jar</jarName>
-                                    </jarNames>
-                                </localConfiguration>                                
                             </starterConfiguration>
                         </dependencyEx>
                     </dependencyConfiguration>
@@ -139,5 +126,5 @@
             </plugin>
         </plugins>
     </build>
-    <name>distribution-wrrl-db-mv-server</name>
+    <name>distribution-wrrl-db-mv-broker</name>
 </project>
