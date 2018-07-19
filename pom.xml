@@ -232,12 +232,12 @@
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.2.9</version>
+                <version>6.2.10</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.2.9</version>
+                <version>6.2.10</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
