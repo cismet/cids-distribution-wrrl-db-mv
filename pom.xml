@@ -269,7 +269,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>6.0.15</version>
+                <version>6.0.16</version>
             </dependency>
           
             <dependency>
@@ -294,5 +294,6 @@
         <module>distribution-wrrl-db-mv-reportgenerator-fgsk</module>
         <module>distribution-wrrl-db-mv-navigator2G</module>
         <module>distribution-wrrl-db-mv-navigator1G</module>
+        <module>distribution-wrrl-db-mv-navigator-log</module>
     </modules>
 </project>
