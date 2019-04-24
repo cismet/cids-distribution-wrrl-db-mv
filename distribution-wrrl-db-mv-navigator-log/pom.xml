@@ -137,7 +137,7 @@
                                 Confguration of the starter (JAR or JNLP)
                             -->
                             <starterConfiguration>
-                                <starterAlias>navigator</starterAlias>
+                                <starterAlias>navigatorLog</starterAlias>
                                 
                                 <mainClass>Sirius.navigator.Navigator</mainClass>
                                 
@@ -258,5 +258,5 @@
             </plugin>-->
         </plugins>
     </build>
-    <name>distribution-wrrl-db-mv-navigator</name>
+    <name>distribution-wrrl-db-mv-navigatorLog</name>
 </project>
