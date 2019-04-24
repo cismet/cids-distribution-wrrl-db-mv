@@ -8,7 +8,15 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     
-    <artifactId>distribution-wrrl-db-mv-performance-test</artifactId>
+    <!--
+        This is the autodistribution module for the navigator deployment
+        module (cids.custom + cismap-plugin). 
+
+        This aertifact is *not* installed to the maven repository!
+        Its sole purpose is to generate / update an autodistribution that is
+        based on navigator deployment module
+    -->
+    <artifactId>distribution-wrrl-db-mv-navigatorLog</artifactId>
     <packaging>pom</packaging>
 
     <!--
@@ -129,12 +137,12 @@
                                 Confguration of the starter (JAR or JNLP)
                             -->
                             <starterConfiguration>
-                                <starterAlias>performance-tester</starterAlias>
+                                <starterAlias>navigator</starterAlias>
                                 
-                                <mainClass>de.cismet.cids.client.tools.PerformanceComparisonDialog</mainClass>
+                                <mainClass>Sirius.navigator.Navigator</mainClass>
                                 
-                                <title>WRRL-DB-MV Performance-Tester v${project.version}</title>
-                                <description>WRRL-DB-MV Performance-Tester in der Version ${project.version} vom ${maven.build.timestamp}</description>
+                                <title>WRRL-DB-MV Navigator v${project.version}</title>
+                                <description>WRRL-DB-MV Navigator in der Version ${project.version} vom ${maven.build.timestamp}</description>
                                 
                                 <!--
                                     Icon HREFs are relative to the *codebase*!
@@ -147,18 +155,60 @@
                                     <initialHeapSize>256M</initialHeapSize>
                                     <maximalHeapSize>756M</maximalHeapSize>
                                 </java>
-                                                                
+                                
+                                
+                                <properties>
+                                    <!--
+                                    <property>
+                                        <name>jnlp.directory.extension</name>
+                                        <value>${de.cismet.cidsAccountExtension}</value>
+                                    </property>
+                                    -->
+                                    <property>
+                                        <name>jnlp.intranetUse</name>
+                                        <value>true</value>
+                                    </property>
+                                </properties>
+                                
+                                <!--
+                                    Arguments must *absolute* (codebase) and must
+                                    match the <accountExtension> if <flatClientDirectory>
+                                    is *not* set to false!                                 
+                                -->
                                 <arguments>
-                                    <argument>TEST-System;https://wrrldbmv-callserver.cismet.de/callserver/binary;admin@Administratoren@WRRL_DB_MV;true;132@257@WRRL_DB_MV;132@257@WRRL_DB_MV</argument>
-                                    <argument>LIVE-System;https://fis-wasser-mv.de/callserver/binary;admin@Administratoren@WRRL_DB_MV;true;132@257@WRRL_DB_MV;132@257@WRRL_DB_MV</argument>
+                                    <!--<argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4js10221.properties</argument>-->
+                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4jDebug.properties</argument>
+                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>
+                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}</argument>
+                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/plugins</argument>
+                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/search</argument>
+                                    <argument>AUTO</argument>
                                 </arguments>
                                 
+                                <!--
+                                    The cids maven plugin checks if these dependencies are actually present
+                                    in lib/local{$accountExtension}/ when updating the classpath entries
+                                    of the starters. 
+                                    You can put empty jars lib/local{$accountExtension}/ if these files
+                                    are not available on the system where the autodistribution is built!
+                                -->
                                 <localConfiguration>
                                     <jarNames>
-                                        <jarName>serverCert_fiswrrl.jar</jarName>
+                                        <!--
+                                            cids custom config
+                                        -->
+					<jarName>serverCert.jar</jarName>
+                                        <jarName>i18n.jar</jarName>
+                                        <jarName>cismapPluginImages.jar</jarName>
+                                        <jarName>navigatorImages.jar</jarName>
+                                        <jarName>res.jar</jarName>
+                                        <jarName>templates.jar</jarName>
+                                        <jarName>wfsForms.jar</jarName>
+                                        <jarName>cismapCommonsImages.jar</jarName>
+                                        <jarName>editor.jar</jarName>
+                                        <jarName>jasper-fonts.jar</jarName>
                                     </jarNames>
                                 </localConfiguration>
-
                             </starterConfiguration>
                         </dependencyEx>
                     </dependencyConfiguration>
@@ -208,5 +258,5 @@
             </plugin>-->
         </plugins>
     </build>
-    <name>distribution-wrrl-db-mv-performance-test</name>
+    <name>distribution-wrrl-db-mv-navigator</name>
 </project>
