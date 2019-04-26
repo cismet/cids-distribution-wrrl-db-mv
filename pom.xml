@@ -295,5 +295,6 @@
         <module>distribution-wrrl-db-mv-navigator2G</module>
         <module>distribution-wrrl-db-mv-navigator1G</module>
         <module>distribution-wrrl-db-mv-navigator-log</module>
+        <module>distribution-wrrl-db-mv-navigator3G</module>
     </modules>
 </project>
