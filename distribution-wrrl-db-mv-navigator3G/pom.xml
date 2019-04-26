@@ -16,7 +16,7 @@
         Its sole purpose is to generate / update an autodistribution that is
         based on navigator deployment module
     -->
-    <artifactId>distribution-wrrl-db-mv-navigatorLog</artifactId>
+    <artifactId>distribution-wrrl-db-mv-navigator3G</artifactId>
     <packaging>pom</packaging>
 
     <!--
@@ -137,7 +137,7 @@
                                 Confguration of the starter (JAR or JNLP)
                             -->
                             <starterConfiguration>
-                                <starterAlias>navigatorLog</starterAlias>
+                                <starterAlias>navigator3G</starterAlias>
                                 
                                 <mainClass>Sirius.navigator.Navigator</mainClass>
                                 
@@ -152,8 +152,8 @@
                                 
                                 <java>
                                     <version>1.6+</version>
-                                    <initialHeapSize>256M</initialHeapSize>
-                                    <maximalHeapSize>756M</maximalHeapSize>
+                                    <initialHeapSize>512M</initialHeapSize>
+                                    <maximalHeapSize>3072M</maximalHeapSize>
                                 </java>
                                 
                                 
@@ -177,7 +177,7 @@
                                 -->
                                 <arguments>
                                     <!--<argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4js10221.properties</argument>-->
-                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4jDebug.properties</argument>
+                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4j.properties</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/plugins</argument>
@@ -258,5 +258,5 @@
             </plugin>-->
         </plugins>
     </build>
-    <name>distribution-wrrl-db-mv-navigatorLog</name>
+    <name>distribution-wrrl-db-mv-navigator3G</name>
 </project>
