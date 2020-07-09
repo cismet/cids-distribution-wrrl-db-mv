@@ -180,7 +180,7 @@
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4jDebug.properties</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}</argument>
-                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/plugins</argument>
+                                    <argument>classpath:</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/search</argument>
                                     <argument>AUTO</argument>
                                 </arguments>
