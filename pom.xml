@@ -3,12 +3,12 @@
     <parent>
         <groupId>de.cismet.cids</groupId>
         <artifactId>cids-distribution-parent</artifactId>
-        <version>6.0</version>
+        <version>7.0</version>
     </parent>
       
     <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
     <artifactId>wrrl-db-mv-distribution</artifactId>
-    <version>21.03.1</version>
+    <version>21.03.2</version>
     <packaging>pom</packaging>
 
     <name>cids-custom WRRL-DB-MV Distribution</name>
@@ -24,7 +24,7 @@
         <connection>scm:https://github.com/cismet/cids-distribution-wrrl-db-mv.git</connection>
         <developerConnection>scm:git:git@github.com:cismet/cids-distribution-wrrl-db-mv.git</developerConnection>
         <url>https://github.com/cismet/cids-distribution-wrrl-db-mv</url>
-        <tag>v21.03.1</tag>
+        <tag>v21.03.2</tag>
     </scm>
     
     <issueManagement>
@@ -52,19 +52,19 @@
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>cismet-ext-bom</artifactId>
-                <version>6.0.1</version>
+                <version>7.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-types</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.5.5</version>
+                <version>7.0</version>
                 <exclusions>
                     <exclusion>
                         <groupId>postgresql</groupId>
@@ -79,7 +79,7 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>6.5.5</version>
+                <version>7.0</version>
                 <type>test-jar</type>
                 <exclusions>
                     <exclusion>
@@ -95,18 +95,18 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.2.7</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>6.2.7</version>
+                <version>7.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.6.4</version>
+                <version>7.0</version>
                 <exclusions>
                     <exclusion>
                         <groupId>postgresql</groupId>
@@ -121,7 +121,7 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>6.6.2</version>
+                <version>7.0</version>
                 <type>test-jar</type>
                 <exclusions>
                     <exclusion>
@@ -137,49 +137,49 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-application-commons</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cidsbean-json-patch</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cidsbean-json-patch</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.custom</groupId>
-                <artifactId>cismet-deegree</artifactId>
-                <version>2.3.11</version>
+                <artifactId>cismet-deegree2.3</artifactId>
+                <version>7.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.custom</groupId>
                 <artifactId>beansbinding</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>json-patch</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
                 <type>test-jar</type>
             </dependency>
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>json-patch</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>jcommander</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.3.9</version>
+                <version>7.0</version>
                 <exclusions>
                     <exclusion>
                         <groupId>postgresql</groupId>
@@ -194,7 +194,7 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>6.3.9</version>
+                <version>7.0</version>
                 <type>test-jar</type>
                 <exclusions>
                     <exclusion>
@@ -210,72 +210,72 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.3.4</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>6.3.4</version>
+                <version>7.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>6.1.8</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>6.1.8</version>
+                <version>7.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cids-utils</artifactId>
-                <version>6.0.1</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv-server</artifactId>
-                <version>6.1</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv-commons</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>6.1.8</version>
+                <version>7.0</version>
             </dependency>
           
             <dependency>
                 <groupId>de.cismet.cids.navigator.plugin</groupId>
                 <artifactId>wf-akuk</artifactId>
-                <version>6.0</version>
+                <version>7.0</version>
             </dependency> 
         </dependencies>
     </dependencyManagement>
