@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
+        <artifactId>wrrl-db-mv-distribution</artifactId>
+        <version>7.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    
+    <!--
+        This is the autodistribution module for the navigator deployment
+        module (cids.custom + cismap-plugin). 
+
+        This aertifact is *not* installed to the maven repository!
+        Its sole purpose is to generate / update an autodistribution that is
+        based on navigator deployment module
+    -->
+    <artifactId>local-default-wrrl</artifactId>
+    <packaging>pom</packaging>
+    
+    <name>local-default-wrrl</name>
+    <description>default local runtime dependencies</description>
+
+    <dependencies>       
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>i18n</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>jasper-fonts</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>res</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>serverCert</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>templates</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>templatesX</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>navigatorImages</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>wfsForms</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>cismapCommonsImages</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.cismet.localWrrl</groupId>
+            <artifactId>cismapPluginImages</artifactId>
+            <version>1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+</project>
