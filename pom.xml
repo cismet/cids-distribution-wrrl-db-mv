@@ -69,7 +69,7 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>7.2.117.2.8</version>
+                <version>7.2.11</version>
                 <type>test-jar</type>
             </dependency>                         
             <dependency>
