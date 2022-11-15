@@ -52,7 +52,7 @@
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>cismet-ext-bom</artifactId>
-                <version>7.2.1</version>
+                <version>7.2.2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -64,12 +64,12 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>7.2.11</version>
+                <version>7.3</version>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>7.2.11</version>
+                <version>7.3</version>
                 <type>test-jar</type>
             </dependency>                         
             <dependency>
@@ -86,12 +86,12 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.25</version>
+                <version>7.0.27</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>7.0.25</version>
+                <version>7.0.27</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
@@ -139,12 +139,12 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>7.11</version>
+                <version>7.11.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>7.11</version>
+                <version>7.11.2</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
@@ -172,12 +172,12 @@
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>7.9.4</version>
+                <version>7.9.5</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>7.9.4</version>
+                <version>7.9.5</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
@@ -199,7 +199,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv-server</artifactId>
-                <version>7.0.8</version>
+                <version>7.0.9</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
@@ -209,7 +209,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>7.1.2</version>
+                <version>7.2</version>
             </dependency>
           
             <dependency>
