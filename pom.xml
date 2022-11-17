@@ -209,7 +209,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>7.2</version>
+                <version>7.2.1</version>
             </dependency>
           
             <dependency>
