@@ -8,7 +8,7 @@
       
     <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
     <artifactId>wrrl-db-mv-distribution</artifactId>
-    <version>23.01.2</version>
+    <version>23.02.1</version>
     <packaging>pom</packaging>
 
     <name>cids-custom WRRL-DB-MV Distribution</name>
@@ -24,7 +24,7 @@
         <connection>scm:https://github.com/cismet/cids-distribution-wrrl-db-mv.git</connection>
         <developerConnection>scm:git:git@github.com:cismet/cids-distribution-wrrl-db-mv.git</developerConnection>
         <url>https://github.com/cismet/cids-distribution-wrrl-db-mv</url>
-        <tag>v23.01.2</tag>
+        <tag>v23.02.1</tag>
     </scm>
     
     <issueManagement>
@@ -209,7 +209,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>7.2.5</version>
+                <version>7.2.6</version>
             </dependency>
           
             <dependency>
