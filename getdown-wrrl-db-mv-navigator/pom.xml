@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
         <artifactId>wrrl-db-mv-distribution</artifactId>
-        <version>23.03.2</version>
+        <version>23.03.3</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -81,6 +81,8 @@
                             </appargs>
                             <jvmargs>
                                 <argument>-XX:MaxHeapSize=756M</argument>
+                                <jvmarg>-Duser.country=DE</jvmarg>
+                                <jvmarg>-Duser.language=de</jvmarg>
                             </jvmargs>
                             <ui>
                                 <name>FIS Wasser</name>

@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
         <artifactId>wrrl-db-mv-distribution</artifactId>
-        <version>23.03.2</version>
+        <version>23.03.3</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -80,6 +80,8 @@
                                 <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/profiles</argument>
                             </appargs>
                             <jvmargs>
+                                <jvmarg>-Duser.country=DE</jvmarg>
+                                <jvmarg>-Duser.language=de</jvmarg>
                                 <argument>-XX:MaxHeapSize=756M</argument>
                                 <argument>-XX:MaxPermSize=128m</argument>
                             </jvmargs>
