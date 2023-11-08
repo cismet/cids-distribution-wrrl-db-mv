@@ -55,7 +55,7 @@
                         <configuration>
                             <appbase>${de.cismet.cidsCodebase}/apps/navigator-log</appbase>
                             <workDirectory>${de.cismet.cidsDistDir}/apps/navigator-log</workDirectory>
-                            <libPath>../../.libs</libPath>
+                            <libPath>../.libs</libPath>
                             <mainClass>Sirius.navigator.Navigator</mainClass>
                             <outputJarVersions>true</outputJarVersions>
                             <verbose>false</verbose>

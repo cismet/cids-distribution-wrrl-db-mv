@@ -55,7 +55,7 @@
                         <configuration>
                             <appbase>${de.cismet.cidsCodebase}/apps/navigator-performance-test</appbase>
                             <workDirectory>${de.cismet.cidsDistDir}/apps/navigator-performance-test</workDirectory>
-                            <libPath>../../.libs</libPath>
+                            <libPath>../.libs</libPath>
                             <mainClass>Sirius.navigator.Navigator</mainClass>
                             <outputJarVersions>true</outputJarVersions>
                             <verbose>false</verbose>
