@@ -209,7 +209,7 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>8.0.8</version>
+                <version>8.1</version>
             </dependency>
           
             <dependency>
@@ -236,6 +236,7 @@
         <module>distribution-wrrl-db-mv-navigator1G</module>
         <module>distribution-wrrl-db-mv-navigator-log</module>
         <module>distribution-wrrl-db-mv-navigator3G</module>
+        <module>clean-apps</module>
         <module>local-default</module>
         <module>getdown-wrrl-db-mv-navigator</module>
         <module>getdown-wrrl-db-mv-performance-test</module>
