@@ -228,14 +228,14 @@
         <module>distribution-wrrl-db-mv-registry</module>        
         <module>distribution-wrrl-db-mv-broker</module>        
         <module>distribution-wrrl-db-mv-server</module>        
-        <module>distribution-wrrl-db-mv-navigator</module>
-        <module>distribution-wrrl-db-mv-performance-test</module>
+        <!--<module>distribution-wrrl-db-mv-navigator</module>-->
+        <!--<module>distribution-wrrl-db-mv-performance-test</module>-->
         <module>distribution-wrrl-db-mv-reportgenerator-wkfg</module>
         <module>distribution-wrrl-db-mv-reportgenerator-fgsk</module>
-        <module>distribution-wrrl-db-mv-navigator2G</module>
+<!--        <module>distribution-wrrl-db-mv-navigator2G</module>
         <module>distribution-wrrl-db-mv-navigator1G</module>
         <module>distribution-wrrl-db-mv-navigator-log</module>
-        <module>distribution-wrrl-db-mv-navigator3G</module>
+        <module>distribution-wrrl-db-mv-navigator3G</module>-->
         <module>clean-apps</module>
         <module>local-default</module>
         <module>getdown-wrrl-db-mv-navigator</module>
