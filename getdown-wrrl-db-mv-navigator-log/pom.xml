@@ -74,7 +74,7 @@
                             <outputJarVersions>true</outputJarVersions>
                             <verbose>false</verbose>
                             <appargs>
-                                <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4jDebug.properties</argument>
+                                <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4jDebug.xml</argument>
                                 <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>
                                 <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}</argument>
                                 <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/plugins</argument>

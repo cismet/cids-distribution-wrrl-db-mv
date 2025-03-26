@@ -3,7 +3,7 @@
     <parent>
         <groupId>de.cismet.cids</groupId>
         <artifactId>cids-distribution-parent</artifactId>
-        <version>8.0</version>
+        <version>9.0</version>
     </parent>
       
     <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
@@ -52,154 +52,154 @@
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>cismet-ext-bom</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-types</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>8.0.1</version>
+                <version>9.0</version>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>8.0.1</version>
+                <version>9.0</version>
                 <type>test-jar</type>
             </dependency>                         
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>8.1.1</version>
+                <version>9.0.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-gui-commons</artifactId>
-                <version>8.1.1</version>
+                <version>9.0.1</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>8.1</version>
+                <version>9.0.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>8.1</version>
+                <version>9.0.2</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-application-commons</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cidsbean-json-patch</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cidsbean-json-patch</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.custom</groupId>
                 <artifactId>cismet-deegree2.3</artifactId>
-                <version>7.2</version>
+                <version>7.3</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.custom</groupId>
                 <artifactId>beansbinding</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>json-patch</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
                 <type>test-jar</type>
             </dependency>
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>json-patch</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet</groupId>
                 <artifactId>jcommander</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>8.5.2</version>
+                <version>9.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>8.5.2</version>
+                <version>9.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>8.0.2</version>
+                <version>9.0.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>8.0.2</version>
+                <version>9.0.2</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>8.0.4</version>
+                <version>9.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>8.0.4</version>
+                <version>9.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>8.1.3</version>
+                <version>9.0.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>8.1.3</version>
+                <version>9.0.1</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>8.1</version>
+                <version>9.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>8.1</version>
+                <version>9.0</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cids-utils</artifactId>
-                <version>8.1</version>
+                <version>9.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv-server</artifactId>
-                <version>8.0.4</version>
+                <version>9.0</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
@@ -209,13 +209,13 @@
             <dependency>
                 <groupId>de.cismet.cids.custom.wrrl_db_mv</groupId>
                 <artifactId>cids-custom-wrrl-db-mv</artifactId>
-                <version>8.1.1</version>
+                <version>9.0</version>
             </dependency>
           
             <dependency>
                 <groupId>de.cismet.cids.navigator.plugin</groupId>
                 <artifactId>wf-akuk</artifactId>
-                <version>8.0</version>
+                <version>9.0</version>
             </dependency> 
         </dependencies>
     </dependencyManagement>

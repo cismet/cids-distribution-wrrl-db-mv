@@ -87,7 +87,7 @@
                             <appargs>
 <!--                                <argument>log4j.properties</argument>
                                 <argument>navigator.cfg</argument>-->
-                                <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4j.properties</argument>
+                                <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4j.xml</argument>
                                 <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>
                                 <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}</argument>
                                 <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/plugins</argument>
