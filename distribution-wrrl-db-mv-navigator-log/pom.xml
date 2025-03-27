@@ -4,7 +4,7 @@
     <parent>
         <groupId>de.cismet.cids.custom.wrrl-db-mv.distribution</groupId>
         <artifactId>wrrl-db-mv-distribution</artifactId>
-        <version>24.11.1</version>
+        <version>8.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
@@ -177,7 +177,7 @@
                                 -->
                                 <arguments>
                                     <!--<argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4js10221.properties</argument>-->
-                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4jDebug.properties</argument>
+                                    <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/log4jDebug.xml</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}/config/navigator.cfg</argument>
                                     <argument>${de.cismet.cidsCodebase}/client/${de.cismet.cidsAccountExtension}</argument>
                                     <argument>classpath:</argument>
