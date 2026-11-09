@@ -59,17 +59,17 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-types</artifactId>
-                <version>9.0</version>
+                <version>9.0.1</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>9.0.6</version>
+                <version>9.1.1</version>
             </dependency> 
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismet-commons</artifactId>
-                <version>9.0.6</version>
+                <version>9.1.1</version>
                 <type>test-jar</type>
             </dependency>                         
             <dependency>
@@ -86,12 +86,12 @@
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>9.1.10</version>
+                <version>9.2.3</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.commons</groupId>
                 <artifactId>cismap-commons</artifactId>
-                <version>9.1.10</version>
+                <version>9.2.3</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
@@ -113,12 +113,12 @@
             <dependency>
                 <groupId>de.cismet.custom</groupId>
                 <artifactId>cismet-deegree2.3</artifactId>
-                <version>7.3</version>
-            </dependency>            
+                <version>7.4</version>
+            </dependency>
             <dependency>
                 <groupId>de.cismet.custom</groupId>
                 <artifactId>beansbinding</artifactId>
-                <version>9.0</version>
+                <version>9.0.2</version>
             </dependency>            
             <dependency>
                 <groupId>de.cismet</groupId>
@@ -139,56 +139,56 @@
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>9.1.7</version>
+                <version>9.3.2</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server</artifactId>
-                <version>9.1.7</version>
+                <version>9.3.2</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>9.1.1</version>
+                <version>9.2.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest</artifactId>
-                <version>9.1.1</version>
+                <version>9.2.1</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>9.0.4</version>
+                <version>9.1</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids</groupId>
                 <artifactId>cids-server-rest-legacy</artifactId>
-                <version>9.0.4</version>
+                <version>9.1</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>9.1.5</version>
+                <version>9.1.9</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cids.navigator</groupId>
                 <artifactId>cids-navigator</artifactId>
-                <version>9.1.5</version>
+                <version>9.1.9</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>9.0.5</version>
+                <version>9.0.7</version>
             </dependency>
             <dependency>
                 <groupId>de.cismet.cismap</groupId>
                 <artifactId>cismap-plugin</artifactId>
-                <version>9.0.5</version>
+                <version>9.0.7</version>
                 <type>test-jar</type>
             </dependency>            
             <dependency>
